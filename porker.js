@@ -28,3 +28,4 @@ for (var i = 0; i < go.length; i++) {
     console.log(go[i]);
 }
 
+console.log("わーい");
