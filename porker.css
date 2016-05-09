@@ -1,0 +1,99 @@
+.classCard{
+  
+  border:thin solid black;
+  height: 178px;
+  width: 126px;
+  border-radius:5px;
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.topnum{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 1;
+
+}
+.topsuit{
+  position: absolute;
+  top: 25px;
+  left: 7px;
+  z-index: 1;
+
+}
+
+.btmsuit{
+  position: absolute;
+  bottom: 25px;
+  right: 7px;
+  transform: rotate(180deg);
+  z-index: 1;
+
+}
+
+.btmnum{
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+/*
+.cardbody{
+  position: absolute;
+  top: 0;
+  height: 178px;
+  width: 126px;
+
+}
+*/
+
+.form{
+  position: relative;
+  z-index: 2;
+}
+
+
+.classCheckbox{
+  opacity: 0;
+  position: absolute;
+  height: 178px;
+  width: 126px;
+  z-index: 3;
+
+}
+
+.classCheckbox:checked{
+  position: absolute;
+  height: 178px;
+  width: 126px;
+  border: solid;
+  z-index: 3;
+  opacity: 0;
+}
+
+
+
+.button {
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+  border: 2px solid #333;
+  color: #333;
+  line-height: 50px;
+  overflow: hidden;
+}
+.button:hover {
+  color: #fff;
+}
+.button::after {
+  top: -100%;
+  width: 100%;
+  height: 100%;
+}
+.button:hover::after {
+  top: 0;
+  background-color: #333;
+}
