@@ -63,7 +63,27 @@ function hyouji() {
             var num = "Q";
         } else if (go[i].num == 10) {
             var num = "J";
-        } else {
+        } else if (go[i].num == 9){
+            var num = "10";    
+        } else if (go[i].num == 8){
+            var num = "9";
+        } else if (go[i].num == 7){
+            var num = "8";
+        } else if (go[i].num == 6){
+            var num = "7";
+        } else if (go[i].num == 5){
+            var num = "6";
+        } else if (go[i].num == 4){
+            var num = "5";
+        } else if (go[i].num == 3){
+            var num = "4";
+        } else if(go[i].num == 2){
+            var num = "3";
+        } else if(go[i].num == 1){
+            var num = "2";
+        } else if(go[i].num == 0){
+            var num = "1";
+        }else {
             var num = go[i].num + 2;
         }
         if (go[i].suit == "HEART") {
