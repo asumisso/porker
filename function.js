@@ -2,6 +2,7 @@ function draw() {
     var random = Math.floor(Math.random() * deck.length);
     var c = deck[random];
     deck.splice(random, 1);
+    c.anime=true;
     return c;
 }
 
@@ -108,7 +109,13 @@ function hyouji() {
 
 
         var card = document.createElement("div");
+        if(go[i].anime){
+            console.log("あにめ");
+            card.setAttribute("class","anime classCard");
+            go[i].anime = false;
+        }else{
         card.setAttribute("class", "classCard");
+        }
         card.setAttribute("id","idCard" +i);
         card.innerHTML = "<span class='topnum'>" + num + "</span><span class='topsuit'>" + suit + "</span><span class='btmsuit'>" + suit + "</span><span class='btmnum'>" + num + "</span>";
         document.getElementById("formform").appendChild(card);

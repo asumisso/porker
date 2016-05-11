@@ -7,6 +7,11 @@
   position: relative;
   display: inline-block;
   z-index: 0;
+  
+}
+
+.anime{
+    animation:anime1 1s;
 }
 
 .topnum{
@@ -97,3 +102,9 @@
   top: 0;
   background-color: #333;
 }
+
+@keyframes anime1 { /*Safari & Chrome */
+    0% {transform: scale(3) translate(800px,0) rotate(189deg);}
+      100% {transform: scale(1) translate(0px,0);} 
+    } 
+    
